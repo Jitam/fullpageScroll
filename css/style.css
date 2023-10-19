@@ -1,0 +1,80 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Poppins", serif;
+}
+
+.container {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	scroll-behavior: smooth;
+	overflow: auto;
+	scroll-snap-type: y mandatory;
+}
+
+.container .section {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background-blend-mode: multiply;
+	scroll-snap-align: start;
+}
+
+.container .section:nth-child(1) {
+	background: rgba(27, 27, 27, 0.679) url("../assets/images/workspace.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.container .section:nth-child(2) {
+	background: rgba(186, 186, 186, 0.679) url("../assets/images/coffee.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+.container .section:nth-child(3) {
+	background: rgba(224, 255, 101, 0.679) url("../assets/images/adventure.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+.container .section:nth-child(4) {
+	background: rgba(101, 255, 124, 0.679) url("../assets/images/travel.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.container .section:nth-child(5) {
+	background: rgba(255, 186, 101, 0.679) url("../assets/images/food.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.container .section .content {
+	position: absolute;
+	bottom: 50px;
+	left: 20px;
+	max-width: 700px;
+}
+
+.container .section .content h2 {
+	background-color: rgba(255, 255, 255, 0.734);
+	color: #ff5656;
+	padding: 8px 12px;
+	font-weight: 700;
+	display: inline-block;
+	font-size: 2.5rem;
+}
+
+.container .section .content p {
+	background-color: rgba(255, 255, 255, 0.734);
+	color: #ff5656;
+	padding: 20px 50px;
+	font-weight: 700;
+	display: inline-block;
+	margin-top: 10px;
+}
